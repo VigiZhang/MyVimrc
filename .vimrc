@@ -2,7 +2,7 @@
 " Name:
 "       My .vimrc for Python
 " Version:
-"       1.0 - 10/02/15 21:53
+"       1.1 - 12/02/15 23:46
 " Maintainer:
 "       V191
 " Sections:
@@ -178,10 +178,13 @@ set foldcolumn=1
 " export TERM=xterm-256color
 syntax enable 
 
+" Note: https://github.com/sentientmachine/Pretty-Vim-Python.git
 try
-    colorscheme desert
+    colorscheme molokai
 catch
 endtry
+
+"" highlight Comment cterm=bold
 
 set background=dark
 
