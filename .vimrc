@@ -48,10 +48,14 @@ set clipboard=unnamed
 
 " Enable syntax highlighting
 syntax on
+
 " You need to reload this file for the change to apply
 "" filetype off
 " Enable filetype and plugins
 filetype plugin indent on
+
+" Show number
+set number
 
 " Sets how many lines of history VIM remember
 set history=700
@@ -78,7 +82,7 @@ noremap <Leader>E :qa!<CR>   " Quit all windows
 
 " :W sudo saves the file 
 " (useful for handling the permission-denied error)
-command W w !sudo tee % > /dev/null
+"" command W w !sudo tee % > /dev/null
 
 " map sort function to a key
 vnoremap <Leader>s :sort<CR>
@@ -170,6 +174,8 @@ set foldcolumn=1
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Enable syntax highlighting
+" Don't forget to set terminal 256 colors in ~/.bashrc:
+" export TERM=xterm-256color
 syntax enable 
 
 try
